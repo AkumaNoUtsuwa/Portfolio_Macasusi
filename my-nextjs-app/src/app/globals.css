@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+body {
+    background: url("works/Liminal.png") no-repeat center center fixed;
+    background-size: cover;
+    color: yellow;
+    font-family: Heselna;
+}
+
+
+nav {
+    background-color: black;
+    font-size: 35px;
+    height: 60px;
+    width: 100%;
+    opacity: 0.7;
+    font-family: "806 Typography";
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+.nav-link {
+    display: inline-block;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffe680; /* soft yellow glow */
+    text-shadow: 0 0 10px #ffe680, 0 0 20px #ffcc00;
+}
+
+.about-img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 35%;
+    margin-top: 24px;
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
